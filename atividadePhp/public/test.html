@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste - Usuários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>body{padding-top:2rem}</style>
+</head>
+<body>
+<div class="container">
+    <div class="alert alert-info">
+        ⚠️ <strong>Modo Demo:</strong> Para versão completa com Composer, instale o Composer primeiro.
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Usuários</h1>
+            
+            <p class="text-muted">Nenhum banco de dados configurado no modo demo.</p>
+
+            <div class="alert alert-primary">
+                <h5>Como usar em produção:</h5>
+                <ol>
+                    <li>Instale o <strong>Composer</strong> em: https://getcomposer.org/download/</li>
+                    <li>Execute: <code>composer install</code></li>
+                    <li>Execute: <code>php artisan migrate</code></li>
+                    <li>Execute: <code>php artisan serve</code></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Adicionar Usuário (Demo)</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" name="name" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" disabled>
+                </div>
+                <button type="submit" class="btn btn-primary" disabled>Criar</button>
+                <p class="text-muted mt-2 small">Formulário desabilitado: instale Composer e suas dependências</p>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+    <h5>Informações do Projeto:</h5>
+    <ul>
+        <li>Framework: Laravel 11</li>
+        <li>PHP: 8.2+</li>
+        <li>Database: SQLite (database.sqlite)</li>
+        <li>Models: App\Models\User</li>
+        <li>Controllers: App\Http\Controllers\UserController</li>
+    </ul>
+</div>
+</body>
+</html>
